@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(66, 153, 164);
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+.app{
+    color: rgb(8, 21, 21);
+    border: 5px solid rgb(117, 88, 88);
+    text-align: center;
+    
+}
+
+.reducercomponent{
+    background-color: rgb(169, 110, 175);
+    text-align: center;
+    padding: 30px;
+    
+}

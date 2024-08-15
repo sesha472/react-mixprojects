@@ -1,0 +1,17 @@
+
+
+button{
+    background-color: aqua;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 3px 10px rgb(5, 5, 5);
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+
+}
+
+button:hover{
+    box-shadow: 1px 3px 10px rgb(97, 110, 62);
+}
