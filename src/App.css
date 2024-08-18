@@ -3,6 +3,7 @@ body{
     font-size: large;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 900;
+    padding: 4rem;
 }
 .app{
     color: rgb(8, 21, 21);
@@ -16,4 +17,21 @@ body{
     text-align: center;
     padding: 30px;
     
+}
+li{
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-evenly;
+     background-color: rgb(115, 171, 137);
+     width: 40%;
+     align-items: center;
+     border-radius: 10px;
+     margin-bottom:10px ;
+
+
+}
+
+li button{
+    margin-left: 100px;
+
 }

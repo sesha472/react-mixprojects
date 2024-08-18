@@ -1,17 +1,20 @@
 import React from 'react'
 import './App.css'
-import Getuserdetails from './components/Getuserdetails.jsx'
-import Reducercomponent from './components/Reducercomponent.jsx'
+// import Getuserdetails from './components/Getuserdetails.jsx'
+// import Reducercomponent from './components/Reducercomponent.jsx'
+import Todolist from "./components/Todolist.jsx"
 const App = () => {
   return (
     <> 
-      <div>
-    <div className='app'>app
+      <div className='todoadd'>
+    {/* <div className='app'>app
 
-      </div>
+      </div> */}
     
     {/* <Getuserdetails/> */}
-       <Reducercomponent/>
+       {/* <Reducercomponent/> */}
+
+       <Todolist/>
     </div>
 
     </>
