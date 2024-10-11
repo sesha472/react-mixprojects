@@ -17,7 +17,7 @@
 //     default:
 //       return prvstate;
 //   }
-// };
+// }; 
 
 // const Reducercomponent = () => {
 //   const [state, dispatch] = useReducer(reducerfunHandler, intialstate);
@@ -36,7 +36,7 @@
 
 
 
-import React, { useEffect, useReducer, useState } from "react";
+import React, {  useReducer, useState } from "react";
 
 const intialstate = {
   loading: false,
