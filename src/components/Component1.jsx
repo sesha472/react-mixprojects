@@ -40,7 +40,7 @@ const Component1 = () => {
       {items.map((item) => (
         <button
           key={item.id}
-          class="bg-stone-800 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded m-2"
+          className="bg-stone-800 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded m-2"
           onClick={()=>updateitemHandler(item.id,`updated newname ${item.name}`)}
        >
           Button{item.id}
