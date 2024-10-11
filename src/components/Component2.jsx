@@ -34,7 +34,7 @@ const Component2 = () => {
            )}
                
 
-               {countriesindexvalue !==''  &&(
+               {countriesindexvalue !==''&&selectedcity  &&(
                 <h1>selected countries is <b> {countries[countriesindexvalue].name} </b> and cite is <b> {selectedcity} </b> </h1>
                )}
 
