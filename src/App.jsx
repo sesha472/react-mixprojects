@@ -6,16 +6,19 @@ import React from 'react'
 // import Componentssection from './components/Componentssection.jsx'
 // import Component1 from './components/Component1.jsx'
 // import Component2 from './components/Component2.jsx'
-import Userformdata from './components/Userformdata.jsx'
+// import Userformdata from './components/Userformdata.jsx'
+import Componnet3 from './components/Componnet3.jsx';
 const App = () => {
   return (
-      <div className="  bg-stone-400 h-screen ">
+      <div >
         {/* <Todolist /> */}
         {/* <Searchfiletr/> */}
-        {/* <Componentssection/> */}
+        {/* <Componentssection/>*/}
         {/* <Component1/>
     <Component2/> */}
-        <Userformdata />
+        {/*<Userformdata />*/}
+         <Componnet3/>
+
       </div>
   );
 }
