@@ -7,19 +7,32 @@ const Userformdata = () => {
     email: "",
     contact: "",
     gender: "",
+    interests:'',
     subject: "",
     resume: "",
     url: "",
     about: "",
   });
 
+
   const inputChangeHandler = (e) => {
     setuserdata({ ...userdata, [e.target.name]: e.target.value });
   };
+
+
+  
   const submitHandler = (e) => {
     e.preventDefault();
     console.log(userdata);
   };
+
+
+
+
+
+
+
+
   return (
     <div className="bg-gray-500  flex items-center justify-center "
     >
