@@ -7,7 +7,7 @@ const Userformdata = () => {
     email: "",
     contact: "",
     gender: "",
-    interests:'',
+    interests:[],
     subject: "",
     resume: "",
     url: "",
@@ -19,7 +19,18 @@ const Userformdata = () => {
     setuserdata({ ...userdata, [e.target.name]: e.target.value });
   };
 
-
+    const chechboxHandler=(e)=>{
+       if(e.target.checked){
+        setuserdata((prvstate)=>(
+          {...prvstate,interests:[...prvstate.interests,e.target.value]}
+        ))
+       }else{
+        setuserdata((prvstate)=>({
+          ...prvstate,interests:prvstate.interests.filter((item)=>item!==e.target.value)
+        }))
+       }
+       
+    }
   
   const submitHandler = (e) => {
     e.preventDefault();
@@ -138,7 +149,7 @@ const Userformdata = () => {
                   type="checkbox"
                   name="interests"
                   value="sports"
-                  onChange={inputChangeHandler}
+                  onChange={chechboxHandler}
                   className="form-checkbox h-5 w-5 text-blue-600 border-gray-300 focus:ring-blue-500"
                 />
                 <span className="ml-2 text-gray-700">Sports</span>
@@ -149,7 +160,7 @@ const Userformdata = () => {
                   type="checkbox"
                   name="interests"
                   value="music"
-                  onChange={inputChangeHandler}
+                  onChange={chechboxHandler}
                   className="form-checkbox h-5 w-5 text-purple-500 border-gray-300 focus:ring-purple-500"
                 />
                 <span className="ml-2 text-gray-700">Music</span>
@@ -159,8 +170,8 @@ const Userformdata = () => {
                 <input
                   type="checkbox"
                   name="interests"
-                  value="travel"
-                  onChange={inputChangeHandler}
+                  value="Travel"
+                  onChange={chechboxHandler}
                   className="form-checkbox h-5 w-5 text-green-500 border-gray-300 focus:ring-green-500"
                 />
                 <span className="ml-2 text-gray-700">Travel</span>
@@ -197,7 +208,7 @@ const Userformdata = () => {
         </label>
         <label> 
           <span className="block mt-4">URL link</span>
-          <input type="url" name="url" onCanPlay={inputChangeHandler} 
+          <input type="url" name="url" onChange={inputChangeHandler} 
            className="border-pink-200 border w-full p-2 mt-1 rounded-md outline-none"
           />
         </label>

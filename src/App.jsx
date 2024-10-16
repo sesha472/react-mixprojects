@@ -1,12 +1,10 @@
 import React from 'react'
-// import Userformdata from './components/Userformdata';
-import Checkboxcomponent from './components/Checkboxcomponent';
+import Userformdata from './components/Userformdata';
 
 const App = () => {
   return (
       <div >
-        {/* <Userformdata/> */}
-        <Checkboxcomponent/>
+        <Userformdata/>
       </div>
   );
 }
